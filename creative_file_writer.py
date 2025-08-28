@@ -14,9 +14,7 @@ def modify_content(content):
         reversed_line = line[::-1]
         # Capitalize vowels
         styled_line = ''.join([char.upper() if char.lower() in vowels else char for char in reversed_line])
-        # Add emoji for fun
-        styled_line += " "
-        modified_lines.append(styled_line)
+        
     
     # Add a timestamp
     timestamp = f"\n--- File modified on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  ---"
